@@ -1,0 +1,40 @@
+-- Students Table
+INSERT INTO students (enrolment_no, faculty_no, name, dob, hostel_name) VALUES
+('GL5698', '24CSEUG101', 'Ali Raza', '2001-02-15', 'Sir Syed Hostel'),
+('GL5699', '24MBBSU103', 'Fatima Noor', '2002-07-10', 'Begum Rokeya Hostel'),
+('GL5700', '24BATEC105', 'Zoya Khan', '2002-05-01', 'Indira Gandhi Hostel'),
+('GL5701', '24LLMGR202', 'Yusuf Hamid', '2001-11-23', 'Sir Syed Hostel'),
+('GL5702', '24BAHIS107', 'Sameer Javed', '2000-09-12', 'Aftab Hostel'),
+('GL5703', '24BTECH208', 'Sana Tariq', '2001-03-18', 'Begum Rokeya Hostel'),
+('GL5704', '24MCAIT301', 'Nasir Ali', '2000-12-20', 'Sir Syed Hostel'),
+('GL5705', '24MBAHR303', 'Hina Qureshi', '2001-06-15', 'Indira Gandhi Hostel'),
+('GL5706', '24BSCBZ112', 'Talha Syed', '2002-01-11', 'Zakir Hussain Hostel'),
+('GL5707', '24BCOMFN211', 'Uzma Khatoon', '2001-10-19', 'Begum Rokeya Hostel'),
+('GL5708', '24MTECHCE401', 'Adnan Farooq', '2000-07-25', 'Aftab Hostel'),
+('GL5709', '24PHDLAW501', 'Shaista Rehman', '1998-04-12', 'Begum Rokeya Hostel'),
+('GL5710', '24LLBUG603', 'Tariq Zaman', '2002-03-05', 'Sir Syed Hostel'),
+('GL5711', '24BBAFN701', 'Hiba Anwar', '2001-09-08', 'Indira Gandhi Hostel'),
+('GL5712', '24BTECHME801', 'Saif Uddin', '2000-02-22', 'Zakir Hussain Hostel'),
+('GL5713', '24BCSEDS103', 'Arsalan Mehmood', '2002-12-30', 'Sir Syed Hostel'),
+('GL5714', '24MAECON901', 'Noor Fatima', '2001-05-17', 'Begum Rokeya Hostel'),
+('GL5715', '24BSWSP708', 'Farhan Raza', '2002-08-14', 'Aftab Hostel'),
+('GL5716', '24BAENG204', 'Rehana Bano', '2000-11-02', 'Begum Rokeya Hostel'),
+('GL5717', '24BSCMAT301', 'Junaid Akhtar', '2001-01-09', 'Sir Syed Hostel');
+ 
+-- Vendors Table (only one vendor)
+INSERT INTO vendors (username, password) VALUES
+('admin', 'admin123');
+ 
+-- Meals Table
+INSERT INTO meals (vendor_id, meal_name, meal_type) VALUES
+(1, 'Poha, Tea, Banana', 'Breakfast'),
+(1, 'Bread, Butter, Boiled Egg', 'Breakfast'),
+(1, 'Aloo Paratha, Curd', 'Breakfast'),
+
+(1, 'Rice, Daal, Roti', 'Lunch'),
+(1, 'Rajma Chawal, Salad', 'Lunch'),
+(1, 'Biryani, Raita, Papad', 'Lunch'),
+
+(1, 'Pulao, Raita, Kheer', 'Dinner'),
+(1, 'Chapati, Mix Veg, Dal Fry', 'Dinner'),
+(1, 'Chicken Korma, Rice, Pudding', 'Dinner');

@@ -1,0 +1,38 @@
+CREATE DATABASE hostelfoodmanagementsystem; 
+ 
+USE hostelfoodmanagementsystem;
+ 
+-- Students Table
+CREATE TABLE students (
+    enrolment_no VARCHAR(20) PRIMARY KEY,
+    faculty_no VARCHAR(20) UNIQUE NOT NULL,
+    name VARCHAR(100),
+    dob DATE,
+    hostel_name VARCHAR(100)
+);
+ 
+-- Vendors Table
+CREATE TABLE IF NOT EXISTS vendors (
+    vendor_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    password VARCHAR(50)
+);
+ 
+-- Meals Table
+CREATE TABLE meals (
+    meal_id INT AUTO_INCREMENT PRIMARY KEY,
+    vendor_id INT,
+    meal_name VARCHAR(30),
+    meal_type VARCHAR(20),
+    FOREIGN KEY (vendor_id) REFERENCES vendors(vendor_id)	
+   );
+ 
+-- Meal Counter Table
+CREATE TABLE meal_counter (
+    counter_id INT AUTO_INCREMENT PRIMARY KEY,
+    enrolment_no VARCHAR(20),
+    meal_id INT,
+    meal_datetime DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (enrolment_no) REFERENCES students(enrolment_no),
+    FOREIGN KEY (meal_id) REFERENCES meals(meal_id)
+);
