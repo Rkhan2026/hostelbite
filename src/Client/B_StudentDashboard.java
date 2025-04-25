@@ -62,6 +62,7 @@ public class B_StudentDashboard {
         loadMeals();
 
         // === Action: When button is clicked, record the meal ===
+        // Lambda expression, introduced in Java 8. It's a shorter way to define an implementation of the ActionListener interface.
         submitBtn.addActionListener(e -> recordMeal());
 
         // === Add the panel to the frame and show ===

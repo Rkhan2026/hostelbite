@@ -3,6 +3,8 @@ package Client;
 import Database.DBConnection;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.*;
 
 /**
@@ -77,7 +79,16 @@ public class A_StudentLogin {
         formPanel.add(loginBtn);
 
         // === Login Action ===
-        loginBtn.addActionListener(e -> verifyStudent());
+        // Lambda expression, introduced in Java 8. It's a shorter way to define an implementation of the ActionListener interface.
+        // loginBtn.addActionListener(e -> verifyStudent());
+        
+        loginBtn.addActionListener(new ActionListener() {
+            @Override
+                public void actionPerformed(ActionEvent e) {
+                    verifyStudent();
+                }
+            }
+        );
 
         // === Add Form Panel to Frame ===
         frame.add(formPanel);

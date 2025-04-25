@@ -76,6 +76,7 @@ public class D_VendorDashboard {
         refreshBtn.setPreferredSize(new Dimension(200, 40));
 
         // Refresh button functionality
+        // Lambda expression, introduced in Java 8. It's a shorter way to define an implementation of the ActionListener interface.
         refreshBtn.addActionListener(e -> {
             loadMealLogs();
             loadMealSummary();
