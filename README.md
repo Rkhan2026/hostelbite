@@ -1,5 +1,6 @@
 # hostelbite
 Java Swing Based Application For CAMS-2001 - Object Oriented Programming Using Java
+Tech Stack --> Java, Swing, JDBC, MySQL
 
 Requirements-->
 To create a Java Swing GUI based application to resemble the below problem statement:
